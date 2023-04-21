@@ -46,14 +46,14 @@
         y = ref$[x];
         c = String.fromCharCode(12448 + r() * 96);
         x1$ = ctx;
-        x1$.fillStyle = '#0f0';
+        x1$.fillStyle = 'steelblue';
         x1$.fillText(chars[x], x * 10, (y - 1) * 10);
         chars[x] = c;
         if (r() * rows | 0) {
           x2$ = ctx;
           x2$.fillStyle = '#000';
           x2$.fillRect(x * 10, (y - 1) * 10, 10, 10);
-          x2$.fillStyle = '#afa';
+          x2$.fillStyle = 'steelblue';
           x2$.fillText(c, x * 10, y * 10);
           results$.push((y + 1) % (2 * rows));
         } else {
